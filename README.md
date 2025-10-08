@@ -1,2 +1,2 @@
 # Juno-Docs
-docs for Juno
+docs for all Juno projects, to come soon

@@ -1,2 +1,3 @@
-# Juno-Docs
-docs for all Juno projects, to come soon
+# docs
+projects currently in docs:
+Eventive

@@ -19,7 +19,7 @@ This project (Eventive) is containerized using Docker for easy deployment and co
 cd c:\$projects\tsa-repository
 docker-compose up -d
 
-# Access at http://localhost:3000
+# Access at http://localhost:3000 (local development)
 ```
 
 ### Development Mode
@@ -28,7 +28,7 @@ docker-compose up -d
 # Run with hot reload (Vite dev server)
 docker-compose --profile development up dev
 
-# Access at http://localhost:5173
+# Access at http://localhost:5173 (local development)
 ```
 
 ### Manual Docker Commands
@@ -144,7 +144,7 @@ docker ps
 # Check port mapping
 docker port <container-id>
 
-# Try 127.0.0.1:3000 instead of localhost:3000
+# Try 127.0.0.1:3000 if localhost doesn't work
 ```
 
 ### Build is slow
@@ -189,7 +189,7 @@ tsa-repository/
 ## Next Steps
 
 1. Test locally: `cd c:\$projects\tsa-repository; docker-compose up`
-2. Verify at http://localhost:3000
+2. Verify at `http://localhost:3000` (local development)
 3. Push to GitHub
 4. Deploy to cloud platform (Fly.io, Railway, etc.)
 5. Configure custom domain

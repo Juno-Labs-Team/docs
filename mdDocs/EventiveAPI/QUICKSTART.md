@@ -55,14 +55,16 @@ You should see:
 ```
 🚀 EventiveAPI server running on port 3001
 📝 Environment: development
-🔗 Health check: http://localhost:3001/health
-📚 API docs: http://localhost:3001/docs
+🔗 Health check: /health
+📚 API docs: /docs
 ```
 
 ### Step 4: Test It Works (1 min)
 
+When running locally, test the health endpoint at `http://localhost:3001/health`:
+
 ```bash
-# Test health endpoint
+# Test health endpoint (local development)
 curl http://localhost:3001/health
 ```
 
@@ -78,7 +80,7 @@ Expected response:
 
 ### Step 5: View API Docs (30 sec)
 
-Open in browser: http://localhost:3001/docs
+When running locally, open in browser: `http://localhost:3001/docs`
 
 ---
 
@@ -108,7 +110,7 @@ Open in browser: http://localhost:3001/docs
 3. **Test authentication:**
    - Login via frontend
    - Open browser console
-   - Check Network tab for API calls to localhost:3001
+   - Check Network tab for API calls to your backend
 
 ### Test API Endpoints
 
@@ -120,7 +122,7 @@ Open in browser: http://localhost:3001/docs
 # 3. Use in API call:
 
 curl -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-  http://localhost:3001/api/users/me
+  http://localhost:3001/api/users/me  # Replace with your API URL
 ```
 
 Expected response:
@@ -147,7 +149,7 @@ Expected response:
 curl -X POST \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -F "avatar=@/path/to/image.jpg" \
-  http://localhost:3001/api/uploads/avatar
+  http://localhost:3001/api/uploads/avatar  # Replace with your API URL
 ```
 
 Expected response:
@@ -243,7 +245,7 @@ docker-compose up -d
 # 3. Check logs
 docker-compose logs -f api
 
-# 4. Test
+# 4. Test (local development)
 curl http://localhost:3001/health
 ```
 
@@ -325,7 +327,7 @@ Basic steps:
 
 ## Summary
 
-✅ Backend is running on http://localhost:3001
+✅ Backend is running locally on port 3001
 ✅ Health check works
 ✅ Ready to integrate with frontend
 ✅ Ready to add more features

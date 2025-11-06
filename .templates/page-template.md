@@ -193,9 +193,9 @@ Help users navigate to related documentation:
 
 External links and resources:
 
-- [External Resource 1](https://example.com)
-- [External Resource 2](https://example.com)
-- [Official Documentation](https://example.com)
+- [VitePress Documentation](https://vitepress.dev/)
+- [Juno Labs GitHub](https://github.com/Juno-Labs-Team)
+- [Main Documentation](https://junodocs.netlify.app)
 
 ## FAQ
 
@@ -225,4 +225,4 @@ Suggest what the reader should do next:
 
 ---
 
-**Need help?** Join our community or [open an issue](https://github.com/your-repo/issues).
+**Need help?** Join our community or [open an issue](https://github.com/Juno-Labs-Team/docs/issues).

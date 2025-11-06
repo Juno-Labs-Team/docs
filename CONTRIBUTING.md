@@ -2,7 +2,7 @@
 
 This guide will help you add and manage documentation pages for the Juno Labs projects.
 
-## 📚 Documentation Structure
+## Documentation Structure
 
 This documentation site uses **VitePress**, a static site generator designed for technical documentation.
 
@@ -10,7 +10,7 @@ This documentation site uses **VitePress**, a static site generator designed for
 - **Eventive** (`/eventive/`) - Frontend React application (previously `tsa-repository`)
 - **EventiveAPI** (`/eventive-api/`) - Backend Node.js API
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Running Locally
 
@@ -30,7 +30,7 @@ npm run docs:preview
 
 The dev server runs at `http://localhost:5173` by default.
 
-## 📝 Adding New Pages
+## Adding New Pages
 
 ### Step 1: Create the Markdown File
 
@@ -100,7 +100,7 @@ nav: [
 ]
 ```
 
-## 🎨 Markdown Features
+## Markdown Features
 
 VitePress supports enhanced Markdown features:
 
@@ -160,7 +160,7 @@ Hidden content goes here
 :::
 ```
 
-## 📁 Recommended Page Structure
+## Recommended Page Structure
 
 ### For Frontend (Eventive) Documentation
 
@@ -235,7 +235,7 @@ eventive-api/
     └── troubleshooting.md            # Common issues
 ```
 
-## 🔄 Migrating Documentation from Repositories
+## Migrating Documentation from Repositories
 
 When moving docs from `tsa-repository` or `EventiveAPI` repos:
 
@@ -283,7 +283,7 @@ git push
 
 Netlify will automatically build and deploy your changes.
 
-## 🎯 Best Practices
+## Best Practices
 
 ### 1. **Keep URLs Stable**
 Once a page is published, avoid changing its path. If you must, add a redirect.
@@ -322,7 +322,7 @@ Regularly review and update code examples to match the current codebase.
 ### 7. **Add a Table of Contents for Long Pages**
 VitePress automatically generates a TOC from headers.
 
-## 🚢 Deployment
+## Deployment
 
 ### Netlify (Current Setup)
 
@@ -340,7 +340,7 @@ npm run docs:build
 # Upload the .vitepress/dist folder to your hosting provider
 ```
 
-## 📋 Checklist for New Documentation
+## Checklist for New Documentation
 
 - [ ] Create markdown file in appropriate directory
 - [ ] Add content with clear headers and examples
@@ -352,7 +352,7 @@ npm run docs:build
 - [ ] Commit with descriptive message
 - [ ] Push and verify on production
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### Page Not Showing in Sidebar
 - Check sidebar configuration in `.vitepress/config.mts`
@@ -369,13 +369,13 @@ npm run docs:build
 - Ensure all linked pages exist
 - Review the Netlify build logs
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [VitePress Documentation](https://vitepress.dev/)
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Netlify Docs](https://docs.netlify.com/)
 
-## 🤝 Need Help?
+## Need Help?
 
 If you have questions or need assistance:
 1. Check existing documentation structure for examples
@@ -384,4 +384,4 @@ If you have questions or need assistance:
 
 ---
 
-**Happy documenting! 📝**
+**Happy documenting!**

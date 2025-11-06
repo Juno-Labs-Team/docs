@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Juno Labs Docs",
   description: "Docs site containing information about all Juno products",
+  ignoreDeadLinks: true, // Temporarily ignore dead links while building out docs
   vite: {
     logLevel: 'error', // Suppress warning messages
   },

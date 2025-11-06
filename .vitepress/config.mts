@@ -4,16 +4,52 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Juno Labs Docs",
   description: "Docs site containing information about all Juno products",
+  vite: {
+    logLevel: 'error', // Suppress warning messages
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Eventive', link: '/eventive/' },
-      { text: 'EventiveAPI', link: '/eventive-api/' }
+      { text: 'EventiveAPI', link: '/eventive-api/' },
+      { text: 'Contributing', link: '/CONTRIBUTING' }
     ],
 
     sidebar: {
       '/eventive/': [
+        {
+          text: 'Getting Started',
+          items: [
+            { text: 'Installation', link: '/eventive/getting-started/installation' }
+          ]
+        },
+        {
+          text: 'Contributing',
+          items: [
+            { text: 'Contributor Guide', link: '/eventive/contributing/contributor-guide' }
+          ]
+        },
+        {
+          text: 'Architecture',
+          items: [
+            { text: 'Folder Structure', link: '/eventive/architecture/folder-structure' }
+          ]
+        },
+        {
+          text: 'Reference',
+          items: [
+            { text: 'File Reference', link: '/eventive/reference/file-reference' }
+          ]
+        },
+        {
+          text: 'Code Reference',
+          items: [
+            { text: 'Core Files', link: '/eventive/code-reference/core-files' },
+            { text: 'Context Providers', link: '/eventive/code-reference/contexts' },
+            { text: 'Components', link: '/eventive/code-reference/components' }
+          ]
+        },
         {
           text: 'Docker & Deployment',
           items: [
@@ -52,9 +88,29 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Documentation',
+          text: 'Architecture',
           items: [
-            { text: 'Architecture', link: '/eventive-api/architecture' },
+            { text: 'Overview', link: '/eventive-api/architecture' }
+          ]
+        },
+        {
+          text: 'Reference',
+          items: [
+            { text: 'File Reference', link: '/eventive-api/reference/file-reference' }
+          ]
+        },
+        {
+          text: 'API Reference',
+          items: [
+            { text: 'Authentication', link: '/eventive-api/api/authentication' },
+            { text: 'Users', link: '/eventive-api/api/users' },
+            { text: 'Settings', link: '/eventive-api/api/settings' },
+            { text: 'Uploads', link: '/eventive-api/api/uploads' }
+          ]
+        },
+        {
+          text: 'Database',
+          items: [
             { text: 'Migration Guide', link: '/eventive-api/migration' }
           ]
         }

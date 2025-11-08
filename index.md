@@ -23,5 +23,8 @@ features:
     link: /eventive-api/
   - title: Developer Tools
     details: Git workflows, TypeScript best practices, ESLint rules, and authentication guides to maintain code quality.
+  - title: Algorithms
+    details: A collection of (adapted) algorithms used at Juno. Includes custom implementation of standard algorithms to suit efficiency needs.
+    link: /algs/
 ---
 

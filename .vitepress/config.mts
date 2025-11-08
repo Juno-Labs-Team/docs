@@ -14,10 +14,59 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Eventive', link: '/eventive/' },
       { text: 'EventiveAPI', link: '/eventive-api/' },
-      { text: 'Contributing', link: '/CONTRIBUTING' }
+      { text: 'Contributing', link: '/CONTRIBUTING' },
+      { text: 'Algorithms', link: '/algs/' }
     ],
 
     sidebar: {
+      '/algs/': [
+        {
+          text: 'Algorithms',
+          items: [
+            { text: 'Overview', link: '/algs/' }
+          ]
+        },
+        {
+          text: 'Go',
+          collapsed: false,
+          items: [
+            { text: 'Sorting', link: '/algs/go/sorting' },
+            { text: 'Searching', link: '/algs/go/searching' },
+            { text: 'Data Structures', link: '/algs/go/data-structures' },
+            { text: 'Updated Functions', link: '/algs/go/updated-functions' }
+          ]
+        },
+        {
+          text: 'Java',
+          collapsed: false,
+          items: [
+            { text: 'Sorting', link: '/algs/java/sorting' },
+            { text: 'Searching', link: '/algs/java/searching' },
+            { text: 'Data Structures', link: '/algs/java/data-structures' },
+            { text: 'Updated Functions', link: '/algs/java/updated-functions' }
+          ]
+        },
+        {
+          text: 'C++',
+          collapsed: false,
+          items: [
+            { text: 'Sorting', link: '/algs/cpp/sorting' },
+            { text: 'Searching', link: '/algs/cpp/searching' },
+            { text: 'Data Structures', link: '/algs/cpp/data-structures' },
+            { text: 'Updated Functions', link: '/algs/cpp/updated-functions' }
+          ]
+        },
+        {
+          text: 'JavaScript/TypeScript',
+          collapsed: false,
+          items: [
+            { text: 'Sorting', link: '/algs/javascript/sorting' },
+            { text: 'Searching', link: '/algs/javascript/searching' },
+            { text: 'Data Structures', link: '/algs/javascript/data-structures' },
+            { text: 'Updated Functions', link: '/algs/javascript/updated-functions' }
+          ]
+        }
+      ],
       '/eventive/': [
         {
           text: 'Getting Started',

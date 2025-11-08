@@ -30,40 +30,96 @@ export default defineConfig({
           text: 'Go',
           collapsed: false,
           items: [
-            { text: 'Sorting', link: '/algs/go/sorting' },
-            { text: 'Searching', link: '/algs/go/searching' },
-            { text: 'Data Structures', link: '/algs/go/data-structures' },
-            { text: 'Updated Functions', link: '/algs/go/updated-functions' }
+            {
+              text: 'Sorting',
+              collapsed: false,
+              items: [
+                { text: 'Insertion Sort', link: '/algs/go/sorting/insertion-sort' },
+                { text: 'Selection Sort', link: '/algs/go/sorting/selection-sort' },
+                { text: 'Bubble Sort', link: '/algs/go/sorting/bubble-sort' },
+                { text: 'Merge Sort', link: '/algs/go/sorting/merge-sort' },
+                { text: 'QuickSort 3-Way', link: '/algs/go/sorting/quicksort-3' }
+              ]
+            },
+            {
+              text: 'Searching',
+              collapsed: false,
+              items: [
+                // Add searching algorithms here
+              ]
+            }
           ]
         },
         {
           text: 'Java',
           collapsed: false,
           items: [
-            { text: 'Sorting', link: '/algs/java/sorting' },
-            { text: 'Searching', link: '/algs/java/searching' },
-            { text: 'Data Structures', link: '/algs/java/data-structures' },
-            { text: 'Updated Functions', link: '/algs/java/updated-functions' }
+            {
+              text: 'Sorting',
+              collapsed: false,
+              items: [
+                { text: 'Insertion Sort', link: '/algs/java/sorting/insertion-sort' },
+                { text: 'Selection Sort', link: '/algs/java/sorting/selection-sort' },
+                { text: 'Bubble Sort', link: '/algs/java/sorting/bubble-sort' },
+                { text: 'Merge Sort', link: '/algs/java/sorting/merge-sort' },
+                { text: 'QuickSort 3-Way', link: '/algs/java/sorting/quicksort-3' }
+              ]
+            },
+            {
+              text: 'Searching',
+              collapsed: false,
+              items: [
+                // Add searching algorithms here
+              ]
+            }
           ]
         },
         {
           text: 'C++',
           collapsed: false,
           items: [
-            { text: 'Sorting', link: '/algs/cpp/sorting' },
-            { text: 'Searching', link: '/algs/cpp/searching' },
-            { text: 'Data Structures', link: '/algs/cpp/data-structures' },
-            { text: 'Updated Functions', link: '/algs/cpp/updated-functions' }
+            {
+              text: 'Sorting',
+              collapsed: false,
+              items: [
+                { text: 'Insertion Sort', link: '/algs/cpp/sorting/insertion-sort' },
+                { text: 'Selection Sort', link: '/algs/cpp/sorting/selection-sort' },
+                { text: 'Bubble Sort', link: '/algs/cpp/sorting/bubble-sort' },
+                { text: 'Merge Sort', link: '/algs/cpp/sorting/merge-sort' },
+                { text: 'QuickSort 3-Way', link: '/algs/cpp/sorting/quicksort-3' }
+              ]
+            },
+            {
+              text: 'Searching',
+              collapsed: false,
+              items: [
+                // Add searching algorithms here
+              ]
+            }
           ]
         },
         {
           text: 'JavaScript/TypeScript',
           collapsed: false,
           items: [
-            { text: 'Sorting', link: '/algs/javascript/sorting' },
-            { text: 'Searching', link: '/algs/javascript/searching' },
-            { text: 'Data Structures', link: '/algs/javascript/data-structures' },
-            { text: 'Updated Functions', link: '/algs/javascript/updated-functions' }
+            {
+              text: 'Sorting',
+              collapsed: false,
+              items: [
+                { text: 'Insertion Sort', link: '/algs/javascript/sorting/insertion-sort' },
+                { text: 'Selection Sort', link: '/algs/javascript/sorting/selection-sort' },
+                { text: 'Bubble Sort', link: '/algs/javascript/sorting/bubble-sort' },
+                { text: 'Merge Sort', link: '/algs/javascript/sorting/merge-sort' },
+                { text: 'QuickSort 3-Way', link: '/algs/javascript/sorting/quicksort-3' }
+              ]
+            },
+            {
+              text: 'Searching',
+              collapsed: false,
+              items: [
+                // Add searching algorithms here
+              ]
+            }
           ]
         }
       ],

@@ -6,41 +6,58 @@ Divide and conquer algorithm that divides the array into halves, recursively sor
 
 ```java
 public class MergeSort {
-    public static void sort(int[] arr) {
-        if (arr.length <= 1) return;
-        mergeSort(arr, 0, arr.length - 1);
-    }
-    
-    private static void mergeSort(int[] arr, int left, int right) {
-        if (left < right) {
-            int mid = left + (right - left) / 2;
-            mergeSort(arr, left, mid);
-            mergeSort(arr, mid + 1, right);
-            merge(arr, left, mid, right);
+
+    public static void mergeSort(int[] array) {
+        if (array.length < 2) {
+            return; 
         }
+
+        int mid = array.length / 2;
+        int[] leftArray = new int[mid];
+        int[] rightArray = new int[array.length - mid];
+
+        for (int i = 0; i < mid; i++) {
+            leftArray[i] = array[i];
+        }
+        for (int i = mid; i < array.length; i++) {
+            rightArray[i - mid] = array[i];
+        }
+
+        mergeSort(leftArray);  
+        mergeSort(rightArray); 
+
+        merge(array, leftArray, rightArray); 
     }
-    
-    private static void merge(int[] arr, int left, int mid, int right) {
-        int n1 = mid - left + 1;
-        int n2 = right - mid;
-        
-        int[] L = new int[n1];
-        int[] R = new int[n2];
-        
-        System.arraycopy(arr, left, L, 0, n1);
-        System.arraycopy(arr, mid + 1, R, 0, n2);
-        
-        int i = 0, j = 0, k = left;
-        while (i < n1 && j < n2) {
-            if (L[i] <= R[j]) {
-                arr[k++] = L[i++];
+
+    private static void merge(int[] array, int[] leftArray, int[] rightArray) {
+        int L_index = 0; 
+        int R_index = 0; 
+        int O_index = 0; 
+
+        while (i < leftArray.length && j < rightArray.length) {
+            if (leftArray[L_index] <= rightArray[R_index]) {
+                array[O_index] = leftArray[L_index];
+                L_index++;
             } else {
-                arr[k++] = R[j++];
+                array[O_index] = rightArray[R_index];
+                R_index++;
             }
+            O_index++;
         }
-        
-        while (i < n1) arr[k++] = L[i++];
-        while (j < n2) arr[k++] = R[j++];
+
+        //remaning ele of leftArr
+        while (L_index < leftArray.length) {
+            array[O_index] = leftArray[L_index];
+            L_index++;
+            O_index++;
+        }
+
+        // remaining ele of rightArr
+        while (R_index < rightArray.length) {
+            array[O_index] = rightArray[j];
+            R_index++;
+            O_index++;
+        }
     }
 }
 ```
@@ -52,5 +69,5 @@ public class MergeSort {
 ## When to Use
 - Stable sorting required
 - Guaranteed O(n log n) performance
-- Linked lists (no random access needed)
+- LinO_indexed lists (no random access needed)
 - External sorting (large datasets)
